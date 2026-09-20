@@ -1,0 +1,140 @@
+:root {
+  --blush: #F7E8E6;
+  --blush-light: #FDF3F2;
+  --sage: #9AA79F;
+  --sage-dark: #86948B;
+  --cream: #E9DCCB;
+  --pink: #F4B6B5;
+  --white: #FFFFFF;
+  --text-dark: #333333;
+  --text-muted: #666666;
+  
+  --font-script: 'Alex Brush', 'Dancing Script', cursive;
+  --font-serif: 'Playfair Display', 'Marcellus', serif;
+  --font-sans: 'Manrope', 'Quicksand', 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--blush);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--blush);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--blush);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--sage);
+  border-radius: 4px;
+}
+
+/* Section Common Styles */
+section {
+  position: relative;
+  width: 100%;
+  max-width: 1650px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* Sections remain structurally stationary in document flow */
+  transform: none !important;
+}
+
+/* Decorative Wrapper & Image Treatment */
+.decor {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  display: block;
+}
+
+.decor img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Soft Watercolor Flowers Ambient Floating (translateY 0 -> -3px -> 0, rotate 0 -> 0.5deg -> 0) */
+@keyframes ambientFlower1 {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -3px, 0) rotate(0.5deg);
+  }
+}
+
+@keyframes ambientFlower2 {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -3px, 0) rotate(-0.5deg);
+  }
+}
+
+/* Cream Stars Ambient Pulse (opacity 0.6 -> 0.9 -> 0.6, translateY 0 -> -2px -> 0) */
+@keyframes ambientStar {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    opacity: 0.95;
+    transform: translate3d(0, -2px, 0);
+  }
+}
+
+.idle-float-1 {
+  animation: ambientFlower1 6s ease-in-out infinite;
+}
+
+.idle-float-2 {
+  animation: ambientFlower2 7.2s ease-in-out infinite;
+}
+
+.idle-star {
+  animation: ambientStar 4.5s ease-in-out infinite;
+}
+
+.spin-slow {
+  animation: spinSlow 12s linear infinite;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

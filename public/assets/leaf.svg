@@ -1,0 +1,30 @@
+<svg width="300" height="340" viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Elegant Muted Sage Botanical Branch -->
+  <path d="M150 20 C150 100 140 200 130 320" stroke="#849289" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Top Center Leaf -->
+  <path d="M150 20 C130 0 170 0 150 20 Z" fill="#9AA79F"/>
+  <path d="M150 20 C135 45 165 45 150 20 Z" fill="#8C9A91"/>
+
+  <!-- Left Leaf 1 -->
+  <path d="M148 60 C90 30 70 80 148 60 Z" fill="#9AA79F"/>
+  <path d="M148 60 C100 45 85 85 148 60 Z" fill="#A5B2AA"/>
+
+  <!-- Right Leaf 1 -->
+  <path d="M147 90 C210 60 230 110 147 90 Z" fill="#8C9A91"/>
+  <path d="M147 90 C195 75 210 115 147 90 Z" fill="#9AA79F"/>
+
+  <!-- Left Leaf 2 -->
+  <path d="M144 140 C70 110 50 170 144 140 Z" fill="#A5B2AA"/>
+  <path d="M144 140 C80 125 65 175 144 140 Z" fill="#8C9A91"/>
+
+  <!-- Right Leaf 2 -->
+  <path d="M142 180 C220 150 240 210 142 180 Z" fill="#9AA79F"/>
+  <path d="M142 180 C200 165 220 215 142 180 Z" fill="#A5B2AA"/>
+
+  <!-- Left Leaf 3 -->
+  <path d="M138 230 C50 200 30 270 138 230 Z" fill="#8C9A91"/>
+
+  <!-- Right Leaf 3 -->
+  <path d="M135 270 C230 240 250 310 135 270 Z" fill="#9AA79F"/>
+</svg>

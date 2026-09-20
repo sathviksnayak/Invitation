@@ -1,0 +1,29 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Soft Watercolor 5-Petal Flower in Blush Pink -->
+  <g opacity="0.95">
+    <!-- Petal 1 (Top) -->
+    <path d="M100 100 C80 30 120 30 100 100 Z" fill="#F4B6B5"/>
+    <path d="M100 100 C88 45 112 45 100 100 Z" fill="#F8C8C7" opacity="0.8"/>
+
+    <!-- Petal 2 (Top Right) -->
+    <path d="M100 100 C165 45 190 85 100 100 Z" fill="#F4B6B5"/>
+    <path d="M100 100 C150 58 170 88 100 100 Z" fill="#F8C8C7" opacity="0.8"/>
+
+    <!-- Petal 3 (Bottom Right) -->
+    <path d="M100 100 C180 135 150 185 100 100 Z" fill="#F4B6B5"/>
+    <path d="M100 100 C162 130 138 168 100 100 Z" fill="#F8C8C7" opacity="0.8"/>
+
+    <!-- Petal 4 (Bottom Left) -->
+    <path d="M100 100 C50 185 20 135 100 100 Z" fill="#F4B6B5"/>
+    <path d="M100 100 C38 168 62 130 100 100 Z" fill="#F8C8C7" opacity="0.8"/>
+
+    <!-- Petal 5 (Top Left) -->
+    <path d="M100 100 C10 85 35 45 100 100 Z" fill="#F4B6B5"/>
+    <path d="M100 100 C30 88 50 58 100 100 Z" fill="#F8C8C7" opacity="0.8"/>
+
+    <!-- Flower Center Stamen -->
+    <circle cx="100" cy="100" r="14" fill="#FDF8F0"/>
+    <circle cx="100" cy="100" r="10" fill="#E9DCCB"/>
+    <circle cx="100" cy="100" r="5" fill="#C5B5A0"/>
+  </g>
+</svg>
